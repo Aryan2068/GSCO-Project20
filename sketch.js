@@ -16,11 +16,10 @@ function setup() {
 function draw() {
   background(255,255,255);  
   car.velocityX = speed;
+
   if(wall.x-car.x < (car.width+wall.width)/2){
     car.velocityX = 0;
-    /*car.visible = true;
-    wall.visible = true;*/
-    var deformation = 0.5*weight*speed*speedd/22500;
+    var deformation = 0.5*weight*speed*speed/22509;
     if(deformation >180){
       car.shapeColor = color(255,0,0);
     }
